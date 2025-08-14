@@ -1,0 +1,15 @@
+:root {
+  --bg: #f6f7fb;
+  --surface: #fff;
+  --muted: #666;
+  --border: #e0e3eb;
+  --accent: #3b82f6;
+  --danger: #e11d48;
+  --base: #1e1e2f;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, sans-serif; background: var(--bg); color: #111; }
+button { cursor: pointer; }
+.btn { padding: 6px 10px; border: none; background: var(--accent); color: white; border-radius: 6px; }
+.log-out-btn { background: var(--danger); }
