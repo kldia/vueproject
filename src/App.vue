@@ -14,7 +14,7 @@ const items = ref([
 ])
 
 const activeItem = ref(null)
-let editableRows = ref([])
+const editableRows = ref([])
 
 function openDetails(item) {
   activeItem.value = item

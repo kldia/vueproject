@@ -1,69 +1,57 @@
+// main.scss
 @import './_base.scss';
 
-.app-root { min-height: 100vh; display: flex; flex-direction: column; }
-.app-header { height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; background: var(--base); border-bottom: 1px solid var(--border); }
-.content { display: flex; flex: 1; }
-.main-area { flex: 1; padding: 16px; display: flex; gap: 16px; flex-direction: column; }
-.details-section { width: 815px; }
-.main-table { width: 100%; border-collapse: collapse; background: white; }
-.main-table th, .main-table td { padding: 8px 10px; border: 1px solid var(--border); }
-.actions button { margin-right: 6px; }
-.controls { display: flex; gap: 8px; }
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-.sidebar {
-  width: 200px;
-  transition: width 0.3s ease;
-  background: var(--base);
-  overflow: hidden;
-   border-right: 1px solid var(--border);
-   padding: 12px;
-  color: #fff;
+.app-header {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  background: $base;
+  border-bottom: 1px solid $border;
+}
 
-  &.collapsed {
-    width: 60px;
+.content {
+  display: flex;
+  flex: 1;
+}
 
-    .side-link {
-      span {
-        opacity: 0;
-        transform: translateX(-10px);
-      }
-    }
-  }
+.main-area {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.details-section {
+  width: 815px;
+}
 
-  .side-link {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px;
-    text-decoration: none;
-    color: inherit;
+.main-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
 
-    img {
-      width: 24px;
-      height: 24px;
-    }
-
-    span {
-      white-space: nowrap;
-      opacity: 1;
-      transform: translateX(0);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-    }
-  }
-
-  .toggle {
-    width: 100%;
-    background: none;
-    border: none;
-    color: inherit;
-    cursor: pointer;
-    padding: 10px;
-    text-align: center;
+  th, td {
+    padding: 8px 10px;
+    border: 1px solid $border;
   }
 }
+
+.actions button {
+  margin-right: 6px;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+}
+
+

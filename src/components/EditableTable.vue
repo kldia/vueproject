@@ -124,12 +124,44 @@ function onPaste(e) {
 }
 </script>
 
-<style scoped>
-.editable-table { padding: 12px; border: 1px solid var(--border); background: var(--surface); }
-.table-scroll { overflow: auto; max-height: 360px; }
-table { width: 100%; border-collapse: collapse; }
-th, td { padding: 6px 8px; border: 1px solid var(--border); text-align: left; }
-input.invalid { outline: 2px solid var(--danger); outline-style: auto; }
-.validation-note { color: var(--danger); margin-top: 8px; }
-.controls { margin-bottom: 8px; }
+<style lang="scss" scoped>
+
+@import  "../styles/_base.scss";
+
+.editable-table {
+  padding: 12px;
+  border: 1px solid $border;
+  background: $surface;
+
+  .table-scroll {
+    overflow: auto;
+    max-height: 360px;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th, td {
+        padding: 6px 8px;
+        border: 1px solid $border;
+        text-align: left;
+      }
+    }
+  }
+
+  input.invalid {
+    outline: 2px solid $danger;
+    outline-style: auto;
+  }
+
+  .validation-note {
+    color: $danger;
+    margin-top: 8px;
+  }
+
+  .controls {
+    margin-bottom: 8px;
+  }
+}
+
 </style>
